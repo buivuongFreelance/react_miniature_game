@@ -50,7 +50,7 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <title>Sybel Dentistiere</title>
+        <title>Best Miniatures</title>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />

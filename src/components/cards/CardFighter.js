@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -19,12 +19,13 @@ export default function CardFighter({ id }) {
     return (
         <>
             <DialogFighter open={open} handleClose={handleClose} fighter={{ name: FIGHTERS[id].name, id }} />
-            <Card sx={{ display: 'flex', cursor: 'pointer' }} onClick={handleOpen}>
+            <Card sx={{ display: 'flex', cursor: 'pointer' }}>
                 <CardMedia
                     component="img"
                     sx={{ height: 151, width: 'auto' }}
                     image={`/fighters/${id}.png`}
                     alt={id}
+                    onClick={handleOpen}
                 />
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     <CardContent sx={{ flex: '1 0 auto' }}>

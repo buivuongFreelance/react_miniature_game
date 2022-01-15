@@ -46,5 +46,26 @@ export const FIGHTERS = {
     },
     'wrathmonger': {
         name: 'Wrathmonger'
+    },
+    'slaughter_priest': {
+        name: 'Slaughter Priest'
+    },
+    'bloodmaster_of_khorne': {
+        name: 'Bloodmaster of Khorne'
+    },
+    'aspiring_deathbringer': {
+        name: 'Aspiring Deathbringer'
+    },
+    'skullgrinder': {
+        name: 'Skullgrinder'
+    },
+    'bladegheist_revenant': {
+        name: 'Bladegheist Revenant'
+    },
+    'dreadscythe_harridan': {
+        name: 'Dreadscythe Harridan'
+    },
+    'grimghast_reaper': {
+        name: 'Grimghast Reaper'
     }
 };

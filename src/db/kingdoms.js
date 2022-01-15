@@ -18,5 +18,10 @@ export const KINGDOMS = [
         id: 'khorne',
         name: 'Blades of Khorne',
         belongs: 'Chaos'
+    },
+    {
+        id: 'nighthaunt',
+        name: 'Nighthaunt Graveyards',
+        belongs: 'Undead'
     }
 ];

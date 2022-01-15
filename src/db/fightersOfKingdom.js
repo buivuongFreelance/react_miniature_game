@@ -21,6 +21,15 @@ export const FIGHTERS_OF_KINGDOM = {
         'khainite_sister_of_thunder'
     ],
     'khorne': [
-        'wrathmonger'
+        'wrathmonger',
+        'slaughter_priest',
+        'bloodmaster_of_khorne',
+        'aspiring_deathbringer',
+        'skullgrinder'
+    ],
+    'nighthaunt': [
+        'bladegheist_revenant',
+        'dreadscythe_harridan',
+        'grimghast_reaper'
     ]
 };
