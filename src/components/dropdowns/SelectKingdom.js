@@ -33,7 +33,8 @@ export default function SelectKingdom() {
 
     return (
         <Autocomplete
-            disablePortal
+            options={KINGDOMS.sort((a, b) => -b.belongs.localeCompare(a.belongs))}
+            groupBy={(option) => option.belongs}
             id={`${kingdom.id}-select`}
             options={KINGDOMS}
             onChange={handleChange}

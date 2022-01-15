@@ -10,6 +10,17 @@ export const FIGHTERS_OF_KINGDOM = {
         'big_sister',
         'warchild',
         'winterhawk',
-        'iron_lotus'
+        'iron_lotus',
+        'legion_keeper'
     ],
+    'khainite': [
+        'khainite_shade',
+        'khainite_mistress',
+        'khainite_snake',
+        'khainite_spear',
+        'khainite_sister_of_thunder'
+    ],
+    'khorne': [
+        'wrathmonger'
+    ]
 };

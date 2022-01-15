@@ -26,4 +26,25 @@ export const FIGHTERS = {
     'iron_lotus': {
         name: 'Iron Lotus',
     },
+    'legion_keeper': {
+        name: 'Legion Keeper'
+    },
+    'khainite_shade': {
+        name: 'Khainite Shade'
+    },
+    'khainite_mistress': {
+        name: 'Khainite Mistress'
+    },
+    'khainite_snake': {
+        name: 'Khainite Snake'
+    },
+    'khainite_spear': {
+        name: 'Khainite Spear'
+    },
+    'khainite_sister_of_thunder': {
+        name: 'Khainite Sister of Thunder'
+    },
+    'wrathmonger': {
+        name: 'Wrathmonger'
+    }
 };
