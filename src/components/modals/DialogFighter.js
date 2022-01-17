@@ -26,6 +26,7 @@ export default function DialogFighter({ open, handleClose, fighter }) {
                     >
                         <Box
                             component="img"
+                            sx={{ maxWidth: '100%' }}
                             src={`/fighters/${fighter.id}.png`}
                             alt={fighter.id}
                         />

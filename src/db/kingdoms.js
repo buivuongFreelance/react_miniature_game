@@ -1,27 +1,12 @@
 export const KINGDOMS = [
     {
-        id: 'camelot',
-        name: 'Kingdoms of Camelot',
-        belongs: 'Albion'
+        id: 'olympus',
+        name: 'Mount Olympus',
+        belongs: 'Greek'
     },
     {
-        id: 'shael_han',
-        name: 'House of Shael Han',
-        belongs: 'Cathay'
-    },
-    {
-        id: 'khainite',
-        name: 'Khainite Shadowstalkers',
-        belongs: 'Dark Elf'
-    },
-    {
-        id: 'khorne',
-        name: 'Blades of Khorne',
-        belongs: 'Chaos'
-    },
-    {
-        id: 'nighthaunt',
-        name: 'Nighthaunt Graveyards',
-        belongs: 'Undead'
+        id: 'asgard',
+        name: 'Asgard Norse',
+        belongs: 'Norse'
     }
 ];
