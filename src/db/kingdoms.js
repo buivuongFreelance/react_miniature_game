@@ -1,12 +1,7 @@
 export const KINGDOMS = [
     {
-        id: 'olympus',
-        name: 'Mount Olympus',
+        id: 'zeus',
+        name: 'Cult of Zeus',
         belongs: 'Greek'
     },
-    {
-        id: 'asgard',
-        name: 'Asgard Norse',
-        belongs: 'Norse'
-    }
 ];

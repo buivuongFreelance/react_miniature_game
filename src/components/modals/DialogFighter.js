@@ -8,6 +8,18 @@ import DialogTitle from '@mui/material/DialogTitle';
 import { Box } from '@mui/material';
 
 export default function DialogFighter({ open, handleClose, fighter }) {
+
+    let folder = '';
+    let name = '';
+    if (fighter) {
+        const { id } = fighter;
+        const arr = id.split('_');
+        if (arr.length > 1) {
+            folder = arr[0];
+            name = arr[1];
+        }
+    }
+
     return (
         <div>
             <Dialog
@@ -26,8 +38,8 @@ export default function DialogFighter({ open, handleClose, fighter }) {
                     >
                         <Box
                             component="img"
-                            sx={{ maxWidth: '100%' }}
-                            src={`/fighters/${fighter.id}.png`}
+                            sx={{ height: `${fighter.height}px` }}
+                            src={`/fighters/${folder}/${name}.png`}
                             alt={fighter.id}
                         />
                     </DialogContentText>

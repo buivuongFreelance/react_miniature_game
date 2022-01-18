@@ -27,7 +27,7 @@ const Home = () => {
         <Grid container spacing={4} sx={{ mb: 6 }}>
             {FIGHTERS_OF_KINGDOM[kingdom] &&
                 FIGHTERS_OF_KINGDOM[kingdom].map(fighterId => {
-                    return <Grid item xs={12} sm={12} md={6} key={fighterId}>
+                    return <Grid item xs={12} sm={12} md={12} key={fighterId}>
                         <CardFighter id={fighterId} />
                     </Grid>
                 })

@@ -16,14 +16,31 @@ export default function CardFighter({ id }) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    let folder = '';
+    let name = '';
+    if (id) {
+        const arr = id.split('_');
+        if (arr.length > 1) {
+            folder = arr[0];
+            name = arr[1];
+        }
+    }
+
     return (
         <>
-            <DialogFighter open={open} handleClose={handleClose} fighter={{ name: FIGHTERS[id].name, id }} />
+            <DialogFighter open={open} handleClose={handleClose}
+                fighter={{
+                    name: FIGHTERS[id].name,
+                    height: FIGHTERS[id].height,
+                    desc: FIGHTERS[id].desc,
+                    id
+                }}
+            />
             <Card sx={{ display: 'flex', cursor: 'pointer' }}>
                 <CardMedia
                     component="img"
                     sx={{ height: 151, width: 'auto' }}
-                    image={`/fighters/${id}.png`}
+                    image={`/fighters/${folder}/${name}.png`}
                     alt={id}
                     onClick={handleOpen}
                 />
@@ -32,8 +49,8 @@ export default function CardFighter({ id }) {
                         <Typography component="div" variant="h6">
                             {FIGHTERS[id].name}
                         </Typography>
-                        <Typography variant="subtitle1" color="text.secondary" component="div">
-                            {FIGHTERS[id].name}
+                        <Typography variant="subtitle2" color="text.secondary" component="div">
+                            {FIGHTERS[id].desc}
                         </Typography>
                     </CardContent>
                 </Box>
