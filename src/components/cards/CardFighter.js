@@ -31,20 +31,20 @@ export default function CardFighter({ id }) {
             <DialogFighter open={open} handleClose={handleClose}
                 fighter={{
                     name: FIGHTERS[id].name,
-                    height: FIGHTERS[id].height,
+                    height: FIGHTERS[id].height * 2,
                     desc: FIGHTERS[id].desc,
                     id
                 }}
             />
-            <Card sx={{ display: 'flex', cursor: 'pointer' }}>
-                <CardMedia
+            <Box sx={{ display: 'flex', cursor: 'pointer' }}>
+                <Box
                     component="img"
-                    sx={{ height: 151, width: 'auto' }}
-                    image={`/fighters/${folder}/${name}.png`}
+                    sx={{ height: FIGHTERS[id].height, width: 'auto' }}
+                    src={`/fighters/${folder}/${name}.png`}
                     alt={id}
                     onClick={handleOpen}
                 />
-                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                {/* <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     <CardContent sx={{ flex: '1 0 auto' }}>
                         <Typography component="div" variant="h6">
                             {FIGHTERS[id].name}
@@ -53,8 +53,8 @@ export default function CardFighter({ id }) {
                             {FIGHTERS[id].desc}
                         </Typography>
                     </CardContent>
-                </Box>
-            </Card>
+                </Box> */}
+            </Box>
         </>
     );
 }

@@ -24,10 +24,13 @@ const Home = () => {
             </Box>
         </Stack>
         <Toolbar />
-        <Grid container spacing={4} sx={{ mb: 6 }}>
+        <Grid container spacing={4} sx={{ mb: 6 }}
+            direction="row"
+            justifyContent="center"
+            alignItems="end">
             {FIGHTERS_OF_KINGDOM[kingdom] &&
                 FIGHTERS_OF_KINGDOM[kingdom].map(fighterId => {
-                    return <Grid item xs={12} sm={12} md={12} key={fighterId}>
+                    return <Grid item xs={12} sm={6} md={4} key={fighterId}>
                         <CardFighter id={fighterId} />
                     </Grid>
                 })

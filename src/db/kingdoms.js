@@ -1,7 +1,12 @@
 export const KINGDOMS = [
     {
         id: 'zeus',
-        name: 'Cult of Zeus',
+        name: 'Temple of Zeus',
+        belongs: 'Greek'
+    },
+    {
+        id: 'poseidon',
+        name: 'Temple of Poseidon',
         belongs: 'Greek'
     },
 ];
