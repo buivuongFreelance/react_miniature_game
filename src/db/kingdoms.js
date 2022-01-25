@@ -51,6 +51,6 @@ export const KINGDOMS = [
         id: 'sobek',
         name: 'Sobek',
         belongs: 'africa',
-        heights: [396, 260, 338, 262, 225],
+        heights: [396, 260, 202, 278, 227],
     },
 ];
