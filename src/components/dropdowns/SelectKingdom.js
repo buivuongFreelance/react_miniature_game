@@ -26,8 +26,8 @@ export default function SelectKingdom() {
 
     const handleChange = (event, value) => {
         if (value) {
-            setKingdom(value.id);
-            dispatch(chooseSelectedKingdom(value.id));
+            setKingdom(value);
+            dispatch(chooseSelectedKingdom(value));
         }
     };
 
